@@ -154,12 +154,12 @@ public class ArvoreInt {
 			
 		}else {
 			if(raizSubArvore.esquerda != null) {
-				prefix(raizSubArvore.esquerda);
+				infix(raizSubArvore.esquerda);
 				
 			}
 			System.out.print(raizSubArvore.dado + " ");
 			if(raizSubArvore.direita != null) {
-				prefix(raizSubArvore.direita);
+				infix(raizSubArvore.direita);
 			}
 		}
 		
@@ -175,11 +175,11 @@ public class ArvoreInt {
 			
 		}else {
 			if(raizSubArvore.esquerda != null) {
-				prefix(raizSubArvore.esquerda);
+				postfix(raizSubArvore.esquerda);
 				
 			}
 			if(raizSubArvore.direita != null) {
-				prefix(raizSubArvore.direita);
+				postfix(raizSubArvore.direita);
 			}
 			System.out.print(raizSubArvore.dado + " ");
 		}
